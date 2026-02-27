@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from langchain_openai import ChatOpenAI
 from langchain_experimental.agents import create_pandas_dataframe_agent
+from langchain_groq import ChatGroq
 
 # ==========================================
 # 1️⃣ Load Titanic Dataset
@@ -20,8 +21,8 @@ df = pd.read_csv("titanic.csv")
 # ==========================================
 # 2️⃣ Initialize LangChain LLM
 # ==========================================
-llm = ChatOpenAI(
-    model="gpt-4o-mini",   # fast + affordable
+llm = ChatGroq(
+    model="llama3-70b-8192",
     temperature=0
 )
 
