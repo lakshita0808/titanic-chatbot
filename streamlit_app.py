@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import base64
 
-BACKEND_URL = "http://localhost:8001/ask"
+BACKEND_URL = "https://titanic-chatbot-n2id.onrender.com/ask"
 
 st.set_page_config(page_title="Titanic Chatbot", layout="wide")
 
