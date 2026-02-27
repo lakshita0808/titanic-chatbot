@@ -7,3 +7,4 @@ langchain-openai
 langchain-experimental
 openai
 python-multipart
+langchain-groq
