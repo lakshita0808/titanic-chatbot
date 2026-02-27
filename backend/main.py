@@ -2,6 +2,8 @@ import os
 import io
 import base64
 import pandas as pd
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from fastapi import FastAPI
@@ -22,7 +24,7 @@ df = pd.read_csv("titanic.csv")
 # 2️⃣ Initialize LangChain LLM
 # ==========================================
 llm = ChatGroq(
-    model="llama3-70b-8192",
+    model="llama-3.1-8b-instant",
     temperature=0
 )
 
